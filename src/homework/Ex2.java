@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Write a Java program to find the maximum and minimum value of an array.
  */
-public class ex2 {
+public class Ex2 {
     public static void main(String[] args) {
         //Initializing an array of 5(can be more) values
         int[] arr = new  int[5];
