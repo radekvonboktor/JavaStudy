@@ -11,5 +11,6 @@ public class ex1 {
                 sum = sum + arr[i];
             }
         System.out.println("The sum is: " + sum);
+
     }
 }
