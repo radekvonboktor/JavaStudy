@@ -11,21 +11,15 @@ public class Ex8 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.println("Chose a single character from the alphabet: ");
-        String letter = reader.nextLine();
-        String[] vowels = {"a", "e", "i", "o", "u", "y"};
-        for(int i = 0; i < vowels.length; i++){
-            if(letter.equals(vowels[i])){
-                System.out.println("Vowel");
-                break;
-        }else if(letter != vowels[i]){
-                System.out.println("Consonant");
-                break;
-            } else if(letter.length() >1){
-                System.out.println("You entered more than one characters");
-            }
-
-
+        char letter = reader.next().charAt(0);
+        if(letter == 'a' || letter == 'A' || letter == 'e' || letter == 'E'
+                || letter == 'o' || letter == 'O' || letter == 'i' || letter == 'I'
+                || letter == 'u' || letter == 'U'){
+            System.out.println("Vowel");
+        } else {
+            System.out.println("Consonant");
         }
+
 
     }
 }
