@@ -9,17 +9,20 @@ import java.util.Scanner;
  */
 public class Ex8 {
     public static void main(String[] args) {
+        boolean found = false;
         Scanner reader = new Scanner(System.in);
         System.out.println("Chose a single character from the alphabet: ");
-        char letter = reader.next().charAt(0);
-        if(letter == 'a' || letter == 'A' || letter == 'e' || letter == 'E'
-                || letter == 'o' || letter == 'O' || letter == 'i' || letter == 'I'
-                || letter == 'u' || letter == 'U'){
+        String letter = reader.nextLine();
+        String vowels = "aAeEoOiIuU";
+        String consonant = "bBcCdDfFgGhHjJkKlmMnNpPqQrRsStTvVwWxXyYzZ";
+        if(vowels.contains(letter)){
             System.out.println("Vowel");
-        } else {
+        } else if(letter.length() > 1){
+            System.out.println("TYPE JUST ONE LETTER YOU MORON, READ THE TASK");
+        } else if(consonant.contains(letter)){
             System.out.println("Consonant");
+        } else {
+            System.out.println("WRONG DATA TYPE... why are you doing this?");
         }
-
-
     }
 }
