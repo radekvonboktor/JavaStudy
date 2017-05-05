@@ -6,7 +6,7 @@ package homework;
  */
 public class Ex6 {
     public static void main(String[] args) {
-        
+
         //for loop
         int sum1 = 0;
         for(int i = 1; i <= 100; i++){
