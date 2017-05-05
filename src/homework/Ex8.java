@@ -14,7 +14,7 @@ public class Ex8 {
         String letter = reader.nextLine();
         String[] vowels = {"a", "e", "i", "o", "u", "y"};
         for(int i = 0; i < vowels.length; i++){
-            if(letter == vowels[i]){
+            if(letter.equals(vowels[i])){
                 System.out.println("Vowel");
                 break;
         }else if(letter != vowels[i]){
