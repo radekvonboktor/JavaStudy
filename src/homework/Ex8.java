@@ -9,7 +9,6 @@ import java.util.Scanner;
  */
 public class Ex8 {
     public static void main(String[] args) {
-        boolean found = false;
         Scanner reader = new Scanner(System.in);
         System.out.println("Chose a single character from the alphabet: ");
         String letter = reader.nextLine();
