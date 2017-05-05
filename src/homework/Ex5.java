@@ -10,11 +10,9 @@ public class Ex5 {
         Scanner reader = new Scanner(System.in);
         System.out.println("Please enter a random number: ");
         int rand = reader.nextInt();
-        if(rand % 2 != 0){
+        if(rand % 2 != 0 || rand == 2){
             System.out.println("The number you entered is prime");
-        } else if(rand == 2){
-            System.out.println("The number you entered is prime");
-        } else {
+        }  else {
             System.out.println("The number you entered is NOT PRIME YOU DUMBFUCK");
         }
     }
