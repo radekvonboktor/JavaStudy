@@ -10,8 +10,15 @@ public class Ex7 {
     public static void main(String[] args)  {
         String[] day = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
         Scanner reader = new Scanner(System.in);
-        System.out.println("Type a number between 1 and 7");
-        int number = reader.nextInt();
-        System.out.println(number + " is " + day[number - 1]);
+        while(true){
+            System.out.println("Type a number between 1 and 7");
+            int number = reader.nextInt();
+            try{
+                System.out.println(number + " is " + day[number - 1]);
+                break;
+            } catch (ArrayIndexOutOfBoundsException ignore) {
+                System.out.println("Please think again about your life and chose a proper number between 1 and 7");
+            }
+
     }
 }
