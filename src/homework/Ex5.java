@@ -14,6 +14,7 @@ public class Ex5 {
             if(rand % i != 0 || rand ==2){
                 System.out.println("The number you entered is prime");
                 break;
+
             } else {
                 System.out.println("The number you entered is NOT PRIME YOU DUMBFUCK");
                 break;
