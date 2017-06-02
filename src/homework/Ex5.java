@@ -2,7 +2,7 @@ package homework;
 
 import java.util.Scanner;
 
-/**
+/**k
  * Write a program that shows on the screen if a number is prime or not
  */
 public class Ex5 {
