@@ -6,8 +6,7 @@ package homeworkConstructors;
 public class RegularMember extends MemberTypes {
 
     public double getMonthlyPayment(){
-        double payment = monthlyRegPayment;
-        return payment;
+        return super.monthlyRegPayment;
     }
 
 }

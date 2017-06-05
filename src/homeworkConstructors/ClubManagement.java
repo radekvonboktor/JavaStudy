@@ -1,7 +1,5 @@
 package homeworkConstructors;
 
-import java.util.ArrayList;
-import java.util.Collection;
 
 /**
  * Created by mavdjiev on 5.6.2017 г..

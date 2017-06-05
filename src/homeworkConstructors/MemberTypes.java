@@ -1,15 +1,10 @@
 package homeworkConstructors;
 
+import java.util.Scanner;
+
 /**
  * Created by mavdjiev on 5.6.2017 г..
  */
-public class MemberTypes implements Member {
-    public MemberTypes() {
-        double monthlyRegPayment = 30.0;
-    }
-
-    @Override
-    public double getMonthlyPayment() {
-        return 0;
-    }
+public abstract class MemberTypes implements Member {
+    double monthlyRegPayment = 100.0;
 }
