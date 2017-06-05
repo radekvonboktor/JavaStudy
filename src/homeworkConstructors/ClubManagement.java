@@ -24,6 +24,7 @@ public class ClubManagement {
 
     public static void main(String[] args) {
         ClubManagement manager = new ClubManagement();
+
         System.out.println(manager.sumOfAllPayments());
 
     }
