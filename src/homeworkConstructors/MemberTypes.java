@@ -7,6 +7,6 @@ import java.util.Scanner;
  */
 public abstract class MemberTypes implements Member {
 
-    double monthlyRegPayment = 100.0;
+    double monthlyRegPayment = 30.0;
 
 }
