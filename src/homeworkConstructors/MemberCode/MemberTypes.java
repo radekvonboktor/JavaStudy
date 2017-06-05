@@ -1,6 +1,4 @@
-package homeworkConstructors;
-
-import java.util.Scanner;
+package homeworkConstructors.MemberCode;
 
 /**
  * Created by mavdjiev on 5.6.2017 г..

@@ -1,4 +1,4 @@
-package homeworkConstructors;
+package homeworkConstructors.MemberCode;
 
 /**
  * Created by mavdjiev on 5.6.2017 г..

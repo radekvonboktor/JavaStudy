@@ -1,4 +1,4 @@
-package homeworkConstructors;
+package homeworkConstructors.MemberCode;
 
 
 /**
@@ -6,6 +6,7 @@ package homeworkConstructors;
  */
 public class ClubManagement {
     MemberTypes[] members = new MemberTypes[4];
+
     public double sumOfAllPayments(){
         double sum = 0;
 
