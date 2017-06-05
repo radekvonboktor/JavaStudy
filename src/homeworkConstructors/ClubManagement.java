@@ -5,16 +5,17 @@ package homeworkConstructors;
  * Created by mavdjiev on 5.6.2017 г..
  */
 public class ClubManagement {
-    double sum;
     MemberTypes[] members = new MemberTypes[4];
     public double sumOfAllPayments(){
+        double sum = 0;
+
         members[0] = new RegularMember();
         members[1] = new SilverMember();
         members[2] = new GoldMember();
         members[3] = new PlatinumMember();
 
         for(int i = 0; i < members.length; i++){
-            sum += members[i].getMonthlyPayment();
+                sum += members[i].getMonthlyPayment();
         }
         return sum;
     }
