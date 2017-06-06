@@ -5,7 +5,7 @@ package homeworkConstructors.VendingMachine;
  */
 public class Crackers extends ItemsLogic {
     public final double price = 2.49;
-    public final String name = "A3 - Crackers";
+    public final String name = "C3 - Crackers";
 
     public String getName() {
         return this.name;
@@ -13,22 +13,19 @@ public class Crackers extends ItemsLogic {
 
     @Override
     public boolean checkPrice(double priceInput) {
-        if(this.price <= priceInput){
-            System.out.println("You ordered " + this.getClass().getName() + ", here is it");
+        if(price <= priceInput){
             return true;
         } else {
-            System.out.println("Sorry, the amount is not enough for this purchase. Please add more money and try again");
             return false;
         }
     }
 
     @Override
-    public boolean checkItem(String nameInput) {
-        if(this.name.contains(nameInput)){
-            System.out.println("Sorry, we don't have item with such a code");
-            return false;
-        } else {
+    public boolean checkName(String nameInput) {
+        if(name.contains(nameInput)){
             return true;
+        } else {
+            return false;
         }
     }
 

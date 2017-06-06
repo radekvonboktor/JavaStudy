@@ -5,5 +5,5 @@ package homeworkConstructors.VendingMachine;
  */
 public interface Items {
     boolean checkPrice(double priceInput);
-    boolean checkItem(String nameInput);
+    boolean checkName(String nameInput);
 }
