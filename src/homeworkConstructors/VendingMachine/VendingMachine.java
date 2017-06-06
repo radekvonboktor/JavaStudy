@@ -27,8 +27,6 @@ public class VendingMachine {
         items[2] = new Crackers();
     }
 
-
-
     public void performChecks() {
         priceInput = priceReader.nextDouble();
        loop: while(true){
@@ -41,6 +39,7 @@ public class VendingMachine {
                                             System.out.println("Sorry, the amount is not enough for this purchase. Please add more money and try again");
                                     }
                                     break loop;
+
                 case "B2": Chips chipsItem = new Chips();
                                     if(chipsItem.checkPrice(priceInput)){
                                         System.out.println("You ordered " + chipsItem.getName()+ ", here is it");
@@ -48,6 +47,7 @@ public class VendingMachine {
                                         System.out.println("Sorry, the amount is not enough for this purchase. Please add more money and try again");
                                     }
                                     break loop;
+
                 case "C3": Crackers crackerItem = new Crackers();
                                     if(crackerItem.checkPrice(priceInput)){
                                         System.out.println("You ordered " + crackerItem.getName()+ ", here is it");
