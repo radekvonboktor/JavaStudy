@@ -5,28 +5,11 @@ package homeworkConstructors.VendingMachine;
  */
 public class Chips extends ItemsLogic {
     public final double price = 1.99;
-    public final String name = "B2 - Chips";
+    public final String name = "Chips";
+    public final String code = "B2";
 
 
     public String getName() {
-        return this.name;
-    }
-
-    @Override
-    public boolean checkPrice(double priceInput) {
-        if(price <= priceInput){
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    @Override
-    public boolean checkName(String nameInput) {
-        if(name.contains(nameInput)){
-            return true;
-        } else {
-            return false;
-        }
+        return code + " - " + name;
     }
 }

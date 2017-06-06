@@ -61,8 +61,6 @@ public class VendingMachine {
         }
      }
 
-
-
     public static void main(String[] args) {
         System.out.println("Please put money in the money tray:");
         VendingMachine vm = new VendingMachine();
