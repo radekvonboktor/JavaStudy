@@ -6,4 +6,5 @@ package homeworkConstructors.VendingMachine;
 public interface Items {
     boolean checkPrice(double priceInput);
     boolean checkCode(String nameInput);
+
 }
