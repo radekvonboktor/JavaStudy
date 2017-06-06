@@ -32,7 +32,7 @@ public class VendingMachine {
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        System.out.println("Please put money in the vagina looking hole:");
+        System.out.println("Please put money in the money tray:");
         VendingMachine vm = new VendingMachine();
         vm.startTheMachine();
         String nameInput = reader.nextLine();
