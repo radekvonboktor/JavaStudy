@@ -4,7 +4,7 @@ package homeworkConstructors.VendingMachine;
  * Created by Mars on 6/5/2017.
  */
 public class Cola extends ItemsLogic {
-    public final double price = 0.99;
+    public final double price = 1.59;
     public final String name = "A1 - Cola";
 
     public String getName() {
