@@ -23,7 +23,7 @@ public class Crackers extends ItemsLogic {
 
     @Override
     public boolean checkCode(String codeInput) {
-        if(code.equals(codeInput)){
+        if(code.contains(codeInput)){
             return true;
         } else {
             return false;

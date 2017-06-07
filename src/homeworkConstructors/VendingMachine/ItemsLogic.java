@@ -28,31 +28,35 @@ public class ItemsLogic implements Items {
             items[2] = new Crackers();
         }
 
-    public void performChecks(){
-        inputPrice = priceReader.nextDouble();
-        inputCode = codeReader.nextLine();
+    public void startTheMachine(){
         initializeItems();
-        loop:
-        for (int i = 0; i < items.length; i++){
-                if(items[i].checkCode(inputCode)){
-                    if(items[i].checkPrice(inputPrice)){
-                        System.out.println("You ordered " + items[i].getName() + " here it is");
-                        break;
-                    } else {
-                        System.out.println("Sorry, the amount is not enough for this purchase. Please add more money and try again");
-                    }
-                } else if(!items[i].checkCode(inputCode)){
-                    continue;
-                } else {
-                System.out.println("Sorry, we don't have item with such a code");
-                inputCode = codeReader.nextLine();
-
-            }
+        for(int i = 0; i < items.length; i++){
+            System.out.println(items[i].getName());
         }
     }
 
+    public void performChecks() {
+        inputPrice = priceReader.nextDouble();
+        inputCode = codeReader.nextLine();
+        initializeItems();
+        boolean found = false;
+        for (int i = 0; i < items.length; i++) {
+            if (items[i].checkCode(inputCode)) {
+                found = true;
+                if (items[i].checkPrice(inputPrice)) {
+                    System.out.println("You ordered " + items[i].getName() + " here it is");
+                    break;
+                } else {
+                    System.out.println("Sorry, the amount is not enough for this purchase. Please add more money and try again");
+                }
+            }
+        }
+        if(!found){
+            System.out.println("Sorry, we don't have item with such a code");
+        }
+    }
 
-    @Override
+   @Override
     public boolean checkPrice(double priceInput) {
         if (price <= priceInput) {
             return true;
