@@ -6,7 +6,6 @@ package homeworkConstructors.MemberCode;
  */
 public class ClubManagement {
 
-
     private static double sumOfAllPayments(MemberTypes[] members){
         double sum = 0;
         for(int i = 0; i < members.length; i++){
