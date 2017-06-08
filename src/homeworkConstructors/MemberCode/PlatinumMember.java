@@ -6,7 +6,6 @@ package homeworkConstructors.MemberCode;
 public class PlatinumMember extends MemberTypes {
 
     public double getMonthlyPayment(){
-        double payment = monthlyRegPayment - (3* monthlyRegPayment/10);
-        return payment;
+        return platMonthlyRegPayment;
     }
 }

@@ -5,6 +5,8 @@ package homeworkConstructors.MemberCode;
  */
 public abstract class MemberTypes implements Member {
 
-    double monthlyRegPayment = 30.0;
-
+    final double monthlyRegPayment = 30.0;
+    final double silverMonthlyRegPayment = monthlyRegPayment -(monthlyRegPayment/10);
+    final double goldMonthlyRegPayment = monthlyRegPayment - (monthlyRegPayment/5);
+    final double platMonthlyRegPayment = monthlyRegPayment - (3* monthlyRegPayment/10);
 }
