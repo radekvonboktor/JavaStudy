@@ -5,7 +5,7 @@ package homeworkConstructors.MemberCode;
  * Created by mavdjiev on 5.6.2017 г..
  */
 public class ClubManagement {
-    private static MemberTypes[] members = new MemberTypes[4];
+
 
     private static double sumOfAllPayments(MemberTypes[] members){
         double sum = 0;
@@ -17,6 +17,7 @@ public class ClubManagement {
 
     public static void main(String[] args) {
         ClubManagement manager = new ClubManagement();
+        MemberTypes[] members = new MemberTypes[4];
         members[0] = new RegularMember();
         members[1] = new SilverMember();
         members[2] = new GoldMember();
