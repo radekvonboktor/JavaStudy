@@ -35,16 +35,29 @@ public class Item {
 
     public void startTheMachine(double inputPrice, String inputCode){
 
-        ItemFactory itemFactory = new ItemFactory();
-        item = itemFactory.createItem(inputCode);
+        boolean found = false;
 
-            if (item.checkCode(inputCode)) {
-                if (item.checkPrice(inputPrice)) {
-                    System.out.println("You ordered " + item.getName() + " here it is");
-                } else {
-                    System.out.println("Sorry, the amount is not enough for this purchase. Please add more money and try again");
+        while (!found) {
+            try{
+                ItemFactory itemFactory = new ItemFactory();
+                item = itemFactory.createItem(inputCode);
+
+                if (item.checkCode(inputCode)) {
+                    found = true;
+                    if (item.checkPrice(inputPrice)) {
+                        System.out.println("You ordered " + item.getName() + " here it is");
+                    } else {
+                        System.out.println("Sorry, the amount is not enough for this purchase. Please add more money and try again");
+                    }
                 }
+            } catch (NullPointerException e){
+                System.out.println("Sorry, we don't have an item with such code");
+                System.out.println("Please check the available items in the message");
+                Scanner in = new Scanner(System.in);
+                inputCode = in.nextLine();
             }
+        }
+
     }
 }
 

@@ -5,19 +5,16 @@ package homeworkConstructors.vendingMachine_Refactored;
  */
 public class ItemFactory {
 
-    public Item createItem(String inputCode){
-        Item item;
+    public Item createItem(String inputCode) {
+        Item item = null;
 
-         if(inputCode.equals("A1")){
+        if (inputCode.equals("A1")) {
             item = new Cola();
-         } else if(inputCode.equals("B2")){
-             item = new Chips();
-         } else if(inputCode.equals("C3")) {
-             item = new Crackers();
-         } else{
-             System.out.println("Sorry, we don't have an item with such code!");
-             item = null;
-         }
+        } else if (inputCode.equals("B2")) {
+            item = new Chips();
+        } else if (inputCode.equals("C3")) {
+            item = new Crackers();
+        }
         return item;
     }
 
