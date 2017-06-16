@@ -1,25 +1,25 @@
-package homeworkConstructors.VendingMachine;
+package homeworkConstructors.vendingMachine;
 
 import java.util.Scanner;
 
 /**
  * Created by Mars on 6/5/2017.
  */
-public class ItemsLogic implements Items {
-    public double price;
-    public String name;
-    public String code;
+public class ItemLogic implements Item {
+    public double PRICE;
+    public String NAME;
+    public String CODE;
     public double inputPrice;
     public String inputCode;
 
-    public static ItemsLogic[] items = new ItemsLogic[3];
+    public static ItemLogic[] items = new ItemLogic[3];
 
     Scanner priceReader = new Scanner(System.in);
     Scanner codeReader = new Scanner(System.in);
 
 
     public String getName() {
-        return name;
+        return NAME;
     }
 
     public void initializeItems(){
@@ -56,22 +56,14 @@ public class ItemsLogic implements Items {
         }
     }
 
-   @Override
+    @Override
     public boolean checkPrice(double priceInput) {
-        if (price <= priceInput) {
-            return true;
-        } else {
-            return false;
-        }
+        return PRICE <= priceInput;
     }
 
     @Override
     public boolean checkCode(String codeInput) {
-        if(code.contains(codeInput)){
-            return true;
-        } else {
-            return false;
-        }
+        return CODE.contains(codeInput);
     }
 
 

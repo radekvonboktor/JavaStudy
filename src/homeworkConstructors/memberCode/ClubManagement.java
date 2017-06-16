@@ -1,4 +1,4 @@
-package homeworkConstructors.MemberCode;
+package homeworkConstructors.memberCode;
 
 
 /**
